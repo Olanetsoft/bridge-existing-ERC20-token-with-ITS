@@ -35,9 +35,6 @@ const RegisterExistingToken: React.FC = () => {
           <Input placeholder="Enter token address" />
           <FormHelperText>Enter your existing token address you already deployed</FormHelperText>
         </FormControl>
-        <Text fontSize="sm" color="gray.500">
-          Token ID:
-        </Text>
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
           <Button colorScheme="cyan" loadingText="Creating Token" w="sm" variant="solid">
             Register Token

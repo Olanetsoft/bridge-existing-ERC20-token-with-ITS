@@ -48,9 +48,9 @@ const TransferToken = () => {
           <FormHelperText>Source chain for your token eg. Fantom, binance, Polygon etc.</FormHelperText>
         </FormControl>
         <FormControl>
-          <FormLabel>Token Contract Address</FormLabel>
-          <Input placeholder="Enter Token Contract Address" />
-          <FormHelperText>Contract address of the token you want to transfer.</FormHelperText>
+          <FormLabel>Token ID</FormLabel>
+          <Input placeholder="Enter the unique Token ID for your token" />
+          <FormHelperText>Token ID of the token you want to transfer</FormHelperText>
         </FormControl>
         <FormControl>
           <FormLabel>Destination Chain</FormLabel>
