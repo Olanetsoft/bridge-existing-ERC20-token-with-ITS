@@ -48,7 +48,7 @@ const NAV_LINKS: ISubNav[] = [
     children: [
       {
         label: 'Register an Existing token',
-        subLabel: 'Register an existing Interchain Token',
+        subLabel: 'Register an existing token',
         href: '/interchain/register-token',
         logo: 'token',
       },
