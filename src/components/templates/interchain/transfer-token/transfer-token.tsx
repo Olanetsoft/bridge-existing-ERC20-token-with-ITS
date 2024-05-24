@@ -19,7 +19,8 @@ import { useEffect, useState } from 'react';
 import { useContractWrite, useWaitForTransaction } from 'wagmi';
 import { AxelarQueryAPI, Environment, EvmChain, GasToken } from '@axelar-network/axelarjs-sdk';
 
-import interchainTokenContractABI from '../../../../../contracts/interchainTokenABI.json';
+import interchainTokenServiceContractABI from '../../../../../contracts/interchainTokenServiceABI.json';
+const interchainTokenServiceContractAddress = '0xB5FB4BE02232B1bBA4dC8f81dc24C26980dE9e3C';
 
 import { ethers } from 'ethers';
 
@@ -76,9 +77,16 @@ const TransferToken = () => {
           <Input placeholder="Enter Amount to Transfer" />
           <FormHelperText>Amount to transfer to the receiver address.</FormHelperText>
         </FormControl>
-        <Button colorScheme="cyan" loadingText="Transferring Token..." w="sm" variant="solid">
-          Transfer Token
-        </Button>
+
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <Button colorScheme="blue" loadingText="Approving Token..." w="sm" variant="solid">
+            Approve
+          </Button>
+
+          <Button colorScheme="cyan" loadingText="Transferring Token..." w="sm" variant="solid">
+            Transfer Token
+          </Button>
+        </div>
         {displayTransactionHash && (
           <Alert status="info" variant="left-accent" marginTop="2" marginBottom="2">
             <AlertIcon />

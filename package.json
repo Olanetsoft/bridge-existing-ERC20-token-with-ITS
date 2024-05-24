@@ -14,7 +14,7 @@
     "test:cypress": "cypress run --browser chrome --headless"
   },
   "dependencies": {
-    "@axelar-network/axelarjs-sdk": "0.13.9",
+    "@axelar-network/axelarjs-sdk": "^0.16.0",
     "@chakra-ui/icons": "^2.0.8",
     "@chakra-ui/react": "^2.5.5",
     "@emotion/react": "^11",
