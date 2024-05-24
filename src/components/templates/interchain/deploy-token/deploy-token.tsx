@@ -39,8 +39,7 @@ const DeployTokenRemotely = () => {
   // Estimate Gas
   const gasEstimator = async () => {
     try {
-      const gas = await api.estimateGasFee(sourceChain, destinationChain, GasToken.FTM, 700000, 2);
-
+      const gas = await api.estimateGasFee(sourceChain, destinationChain, 700000, 2, GasToken.FTM);
       setGasAmount(Number(gas));
     } catch (error) {
       console.error('Error estimating gas fee: ', error);
